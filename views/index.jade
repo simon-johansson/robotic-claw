@@ -1,0 +1,27 @@
+extends layout
+
+block content
+
+  .row
+    .small-10.small-centered.columns.message-container
+      h1.msg Tilt your device to control the claw
+      h2.msg.or or
+      h1.msg Use the slider
+
+  .row
+    .small-11.medium-8.small-centered.columns
+      .range-slider.round(data-slider="", data-options="display_selector: #sliderOutput3; start: 0; end: 180;")
+        span.range-slider-handle(role="slider", tabindex="0")
+        span.range-slider-active-segment
+        input(type="hidden")
+
+  .row
+    .small-12.small-centered.columns.message-container
+      h2.done done?
+      h1 Please answer this <a href="https://docs.google.com/forms/d/1DRAT7dEIYDuYfU1ZzU9ZPJGWp0sHWaIT8pTX7m1aNnM/viewform">questionnaire</a>
+
+  script(src="bower_components/jquery/dist/jquery.js")
+  script(src="bower_components/foundation/js/foundation.js")
+  script(src="bower_components/foundation/js/foundation/foundation.slider.js")
+  script(src="javascripts/controller.js")
+

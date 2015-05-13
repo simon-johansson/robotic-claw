@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .row
+    .medium-10.medium-centered.columns
+      h1 To controll the claw:
+      h2 1. Connect to "#{wifi}" WiFi network
+      h2
+        | 2. Open
+        span  #{ip}:#{port}
+        |  in your mobile browser
+      h2 3. Tilt your phone to control the claw
+
+      h2
+
+  script(src="bower_components/jquery/dist/jquery.js")
+  script(src="bower_components/foundation/js/foundation.js")
+
