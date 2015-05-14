@@ -1,30 +1,49 @@
 
-.message-container {
-  text-align: center;
+.occupied,
+.controller {
   margin-top: 30px;
-  // align-content: center;
-  // align-content: space-around;
-  // align-content: stretch;
-  // align-content: flex-end;
-  // display: flex;
-  // justify-content: center;
+  text-align: center;
+
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
 }
 
-.msg {
-  margin-bottom: 30px;
-  max-width: 100%;
+.controller {
+  margin-top: 60px;
+
+  h3 {
+    font-size: 35px;
+  }
 }
 
-.or, .done {
-  font-style: italic;
-  color: @dark-red;
-  font-weight: bold;
-}
+.instructions {
+  margin-top: 70px;
 
-.done {
-  margin-bottom: 30px;
-}
+  h1,
+  h2 {
+    margin-bottom: 20px;
+  }
 
-.done, .messages {
-  // margin-top: 30px;
+  h2 {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-style: italic;
+    font-size: 20px;
+  }
+
+  .step {
+    color: @dark-red;
+    font-weight: bold;
+  }
 }

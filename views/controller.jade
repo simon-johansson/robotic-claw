@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+  .controller
+
+    .row
+      .small-11.small-centered.columns
+        h2 Tilt your device to controll the claw
+
+    if questionnaire
+      .row
+        .small-12.small-centered.columns
+          h3 done?
+          h2 Please answer some <a href="#{questionnaire}">questions</a>
+
+  script(src="javascripts/gyro.js")
+

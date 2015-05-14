@@ -1,18 +1,23 @@
 extends layout
 
 block content
+
   .row
-    .medium-10.medium-centered.columns
-      h1 To controll the claw:
-      h2 1. Connect to "#{wifi}" WiFi network
-      h2
-        | 2. Open
-        span  #{ip}:#{port}
-        |  in your mobile browser
-      h2 3. Tilt your phone to control the claw
+    .medium-12.medium-centered.columns.instructions
+      h1 To controll the claw
+      h2 <span class="step">1.</span> Connect to WiFi network <span class="highlight">#{wifi}</span>
+      h2 <span class="step">2.</span> Open <span class="highlight">#{ip}:#{port}</span> in your mobile browser
+      h2 <span class="step">3.</span> Tilt your phone to control the claw
+      h4 Only tested on Chrome running on iPhone 6
+      h3 or
+      h2 Control the claw using the slider below
 
-      h2
+      .row
+        .small-11.medium-8.columns
+          .range-slider.round(data-slider="", data-options="display_selector: #sliderOutput3; start: 0; end: 180;")
+            span.range-slider-handle(role="slider", tabindex="0")
+            span.range-slider-active-segment
+            input(type="hidden")
 
-  script(src="bower_components/jquery/dist/jquery.js")
-  script(src="bower_components/foundation/js/foundation.js")
+  script(src="javascripts/slider.js")
 
