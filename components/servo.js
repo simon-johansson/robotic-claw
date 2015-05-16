@@ -10,6 +10,7 @@ function init() {
       pin: 10,
       range: [0,180],
       type: "standard",
+      center: true
     });
   });
 }

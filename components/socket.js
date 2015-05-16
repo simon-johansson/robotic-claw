@@ -16,6 +16,7 @@ function bindEvents() {
     });
 
     socket.on('gyro', function (data) {
+      console.log(data.x);
       servo.set(data.x);
     });
   });
